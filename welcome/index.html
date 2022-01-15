@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.92.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Welcome &middot; Blog</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://coffeeNtv.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://coffeeNtv.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://coffeeNtv.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://coffeeNtv.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://coffeeNtv.github.io/"><h1>Blog</h1></a>
+      <p class="lead">
+       blog for posting online learning paper reviews 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://coffeeNtv.github.io/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2022. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Welcome</h1>
+  <time datetime=2022-01-15T17:05:21&#43;0800 class="post-date">Sat, Jan 15, 2022</time>
+  <h1 id="记录使用hugo搭建blog的坑">记录使用hugo搭建blog的坑</h1>
+<ul>
+<li>
+<p>github新建repository时不要添加README file</p>
+</li>
+<li>
+<p>如果添加了README file，需要把default branch由main改成master，然后在github上把README file删了，否则访问https://coffeentv.github.io/时README file会覆盖原来的内容</p>
+</li>
+<li>
+<p>在hugo上新建md文件时，把draft一行去掉，此时不要用notepad++这个神坑软件编辑，否则会把你的md文件变成.md.bak文件。建议使用typora</p>
+</li>
+<li>
+<p>使用git push -u origin master如果报错，则先运行git pull &ndash;rebase origin master，再push。参考https://blog.csdn.net/qq_44503987/article/details/107702455</p>
+</li>
+</ul>
+<h2 id="命令行">命令行</h2>
+<p>控制台</p>
+<blockquote>
+<p>hugo new site blog
+cd blog
+hugo new welcome.md
+hugo new post/paper1.md
+cd themes
+git clone <a href="http://github.com/spf13/hyde.git">http://github.com/spf13/hyde.git</a>
+cd ..
+hugo server &ndash;theme=hyde &ndash;buildDrafts &ndash;watch</p>
+</blockquote>
+<blockquote>
+<p>hugo &ndash;theme=hyde &ndash;baseUrl=&ldquo;<a href="https://coffeeNtv.github.io/%22">https://coffeeNtv.github.io/&quot;</a>
+cd public
+git init
+git remote add origin <a href="https://github.com/coffeeNtv/coffeeNtv.github.io.git">https://github.com/coffeeNtv/coffeeNtv.github.io.git</a>
+git add -A
+git commit -m &ldquo;first commit&rdquo;
+git pull &ndash;rebase origin master
+git push -u origin master</p>
+</blockquote>
+<p>config.toml</p>
+<blockquote>
+<p>baseURL = &lsquo;<a href="https://coffeeNtv.github.io/'">https://coffeeNtv.github.io/'</a></p>
+</blockquote>
+<blockquote>
+<p>languageCode = &lsquo;en-us&rsquo;
+title = &lsquo;Blog&rsquo;
+theme = &ldquo;hyde&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>[params]
+description = &ldquo;blog for posting online learning paper reviews&rdquo;</p>
+</blockquote>
+<h2 id="references">references</h2>
+<ul>
+<li><a href="https://www.cnblogs.com/RyanXing/p/Hugo.html">https://www.cnblogs.com/RyanXing/p/Hugo.html</a></li>
+<li><a href="http://newoxygen.github.io/post/hugo%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%99/">http://newoxygen.github.io/post/hugo%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%99/</a></li>
+</ul>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog</title>
+    <link>https://coffeeNtv.github.io/</link>
+    <description>Recent content on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 15 Jan 2022 17:05:57 +0800</lastBuildDate><atom:link href="https://coffeeNtv.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper1</title>
+      <link>https://coffeeNtv.github.io/post/paper1/</link>
+      <pubDate>Sat, 15 Jan 2022 17:05:57 +0800</pubDate>
+      
+      <guid>https://coffeeNtv.github.io/post/paper1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://coffeeNtv.github.io/welcome/</link>
+      <pubDate>Sat, 15 Jan 2022 17:05:21 +0800</pubDate>
+      
+      <guid>https://coffeeNtv.github.io/welcome/</guid>
+      <description>记录使用hugo搭建blog的坑   github新建repository时不要添加README file
+  如果添加了README file，需要把default branch由main改成master，然后在github上把README file删了，否则访问https://coffeentv.github.io/时README file会覆盖原来的内容
+  在hugo上新建md文件时，把draft一行去掉，此时不要用notepad++这个神坑软件编辑，否则会把你的md文件变成.md.bak文件。建议使用typora
+  使用git push -u origin master如果报错，则先运行git pull &amp;ndash;rebase origin master，再push。参考https://blog.csdn.net/qq_44503987/article/details/107702455
+  命令行 控制台
+ hugo new site blog cd blog hugo new welcome.md hugo new post/paper1.md cd themes git clone http://github.com/spf13/hyde.git cd .. hugo server &amp;ndash;theme=hyde &amp;ndash;buildDrafts &amp;ndash;watch
+  hugo &amp;ndash;theme=hyde &amp;ndash;baseUrl=&amp;ldquo;https://coffeeNtv.github.io/&amp;quot; cd public git init git remote add origin https://github.com/coffeeNtv/coffeeNtv.github.io.git git add -A git commit -m &amp;ldquo;first commit&amp;rdquo; git pull &amp;ndash;rebase origin master git push -u origin master</description>
+    </item>
+    
+  </channel>
+</rss>

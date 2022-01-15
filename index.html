@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.92.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blog</title>
+  <meta name="description" content="blog for posting online learning paper reviews" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://coffeeNtv.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://coffeeNtv.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://coffeeNtv.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://coffeeNtv.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="https://coffeeNtv.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Blog" />
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://coffeeNtv.github.io/"><h1>Blog</h1></a>
+      <p class="lead">
+       blog for posting online learning paper reviews 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://coffeeNtv.github.io/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2022. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="posts">
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://coffeeNtv.github.io/post/paper1/">Paper1</a>
+  </h1>
+  <time datetime="2022-01-15T17:05:57&#43;0800" class="post-date">Sat, Jan 15, 2022</time>
+  
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://coffeeNtv.github.io/welcome/">Welcome</a>
+  </h1>
+  <time datetime="2022-01-15T17:05:21&#43;0800" class="post-date">Sat, Jan 15, 2022</time>
+  记录使用hugo搭建blog的坑   github新建repository时不要添加README file
+  如果添加了README file，需要把default branch由main改成master，然后在github上把README file删了，否则访问https://coffeentv.github.io/时README file会覆盖原来的内容
+  在hugo上新建md文件时，把draft一行去掉，此时不要用notepad++这个神坑软件编辑，否则会把你的md文件变成.md.bak文件。建议使用typora
+  使用git push -u origin master如果报错，则先运行git pull &ndash;rebase origin master，再push。参考https://blog.csdn.net/qq_44503987/article/details/107702455
+  命令行 控制台
+ hugo new site blog cd blog hugo new welcome.md hugo new post/paper1.md cd themes git clone http://github.com/spf13/hyde.git cd .. hugo server &ndash;theme=hyde &ndash;buildDrafts &ndash;watch
+  hugo &ndash;theme=hyde &ndash;baseUrl=&ldquo;https://coffeeNtv.github.io/&quot; cd public git init git remote add origin https://github.com/coffeeNtv/coffeeNtv.github.io.git git add -A git commit -m &ldquo;first commit&rdquo; git pull &ndash;rebase origin master git push -u origin master
+  
+  <div class="read-more-link">
+    <a href="/welcome/">Read More…</a>
+  </div>
+  
+</article>
+</div>
+    </main>
+
+    
+      
+    
+  </body>
+</html>
