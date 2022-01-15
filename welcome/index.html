@@ -77,50 +77,93 @@
 <ul>
 <li>每次更新内容要等挺久的</li>
 <li>每次更新似乎都是重新加载整个blog的内容，体量稍大可能会更慢</li>
+<li>格式问题还挺多的，有时间的话慢慢优化</li>
 </ul>
 <h2 id="命令行">命令行</h2>
 <p>控制台</p>
 <blockquote>
-<p>hugo new site blog
-cd blog
-hugo new welcome.md
-hugo new post/paper1.md
-cd themes
-git clone <a href="http://github.com/spf13/hyde.git">http://github.com/spf13/hyde.git</a>
-cd ..
-hugo server &ndash;theme=hyde &ndash;buildDrafts &ndash;watch</p>
+<p>hugo new site blog</p>
 </blockquote>
 <blockquote>
-<p>hugo &ndash;theme=hyde &ndash;baseUrl=&ldquo;<a href="https://coffeeNtv.github.io/%22">https://coffeeNtv.github.io/&quot;</a>
-cd public
-git init
-git remote add origin <a href="https://github.com/coffeeNtv/coffeeNtv.github.io.git">https://github.com/coffeeNtv/coffeeNtv.github.io.git</a>
-git add -A
-git commit -m &ldquo;first commit&rdquo;
-git pull &ndash;rebase origin master
-git push -u origin master</p>
+<p>cd blog</p>
+</blockquote>
+<blockquote>
+<p>hugo new welcome.md</p>
+</blockquote>
+<blockquote>
+<p>hugo new post/paper1.md</p>
+</blockquote>
+<blockquote>
+<p>cd themes</p>
+</blockquote>
+<blockquote>
+<p>git clone <a href="http://github.com/spf13/hyde.git">http://github.com/spf13/hyde.git</a></p>
+</blockquote>
+<blockquote>
+<p>cd ..</p>
+</blockquote>
+<blockquote>
+<p>hugo server &ndash;theme=hyde &ndash;buildDrafts &ndash;watch</p>
+</blockquote>
+<blockquote>
+<p>hugo &ndash;theme=hyde &ndash;baseUrl=&ldquo;<a href="https://coffeeNtv.github.io/%22">https://coffeeNtv.github.io/&quot;</a></p>
+</blockquote>
+<blockquote>
+<p>cd public</p>
+</blockquote>
+<blockquote>
+<p>git init</p>
+</blockquote>
+<blockquote>
+<p>git remote add origin <a href="https://github.com/coffeeNtv/coffeeNtv.github.io.git">https://github.com/coffeeNtv/coffeeNtv.github.io.git</a></p>
+</blockquote>
+<blockquote>
+<p>git add -A</p>
+</blockquote>
+<blockquote>
+<p>git commit -m &ldquo;first commit&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>git pull &ndash;rebase origin master</p>
+</blockquote>
+<blockquote>
+<p>git push -u origin master</p>
 </blockquote>
 <p>更新博客</p>
 <p>hugo语句相当于重新更新了public文件，也可以删除public，再使用hugo &ndash;theme=hyde &ndash;baseUrl=&ldquo;<a href="https://coffeeNtv.github.io/%22">https://coffeeNtv.github.io/&quot;</a> 等语句新建public。接着使用以下语句更新新添加的内容</p>
 <blockquote>
-<p>hugo
-cd public
-git add -A
-git commit -m &ldquo;xxxx&rdquo;
-git push -f origin master</p>
+<p>hugo</p>
+</blockquote>
+<blockquote>
+<p>cd public</p>
+</blockquote>
+<blockquote>
+<p>git add -A</p>
+</blockquote>
+<blockquote>
+<p>git commit -m &ldquo;xxxx&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>git push -f origin master</p>
 </blockquote>
 <p>config.toml</p>
 <blockquote>
 <p>baseURL = &lsquo;<a href="https://coffeeNtv.github.io/'">https://coffeeNtv.github.io/'</a></p>
 </blockquote>
 <blockquote>
-<p>languageCode = &lsquo;en-us&rsquo;
-title = &lsquo;Blog&rsquo;
-theme = &ldquo;hyde&rdquo;</p>
+<p>languageCode = &lsquo;en-us&rsquo;</p>
 </blockquote>
 <blockquote>
-<p>[params]
-description = &ldquo;blog for posting online learning paper reviews&rdquo;</p>
+<p>title = &lsquo;Blog&rsquo;</p>
+</blockquote>
+<blockquote>
+<p>theme = &ldquo;hyde&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>[params]</p>
+</blockquote>
+<blockquote>
+<p>description = &ldquo;blog for posting online learning paper reviews&rdquo;</p>
 </blockquote>
 <h2 id="references">references</h2>
 <ul>

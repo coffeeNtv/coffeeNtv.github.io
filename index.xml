@@ -27,9 +27,13 @@
   使用git push -u origin master如果报错，则先运行git pull &amp;ndash;rebase origin master，再push。参考https://blog.csdn.net/qq_44503987/article/details/107702455
   目前感受到的优缺点 优点：
  可以快速建站，并且不需要安装过多的软件 免费域名  缺点：
- 每次更新内容要等挺久的 每次更新似乎都是重新加载整个blog的内容，体量稍大可能会更慢  命令行 控制台
- hugo new site blog cd blog hugo new welcome.md hugo new post/paper1.md cd themes git clone http://github.com/spf13/hyde.git cd .. hugo server &amp;ndash;theme=hyde &amp;ndash;buildDrafts &amp;ndash;watch
-  hugo &amp;ndash;theme=hyde &amp;ndash;baseUrl=&amp;ldquo;https://coffeeNtv.</description>
+ 每次更新内容要等挺久的 每次更新似乎都是重新加载整个blog的内容，体量稍大可能会更慢 格式问题还挺多的，有时间的话慢慢优化  命令行 控制台
+ hugo new site blog
+  cd blog
+  hugo new welcome.md
+  hugo new post/paper1.md
+  cd themes
+  git clone http://github.com/spf13/hyde.git</description>
     </item>
     
   </channel>
