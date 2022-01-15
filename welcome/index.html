@@ -67,6 +67,17 @@
 <p>使用git push -u origin master如果报错，则先运行git pull &ndash;rebase origin master，再push。参考https://blog.csdn.net/qq_44503987/article/details/107702455</p>
 </li>
 </ul>
+<h2 id="目前感受到的优缺点">目前感受到的优缺点</h2>
+<p>优点：</p>
+<ul>
+<li>可以快速建站，并且不需要安装过多的软件</li>
+<li>免费域名</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>每次更新内容要等挺久的</li>
+<li>每次更新似乎都是重新加载整个blog的内容，体量稍大可能会更慢</li>
+</ul>
 <h2 id="命令行">命令行</h2>
 <p>控制台</p>
 <blockquote>
@@ -88,6 +99,15 @@ git add -A
 git commit -m &ldquo;first commit&rdquo;
 git pull &ndash;rebase origin master
 git push -u origin master</p>
+</blockquote>
+<p>更新博客</p>
+<p>hugo语句相当于重新更新了public文件，也可以删除public，再使用hugo &ndash;theme=hyde &ndash;baseUrl=&ldquo;<a href="https://coffeeNtv.github.io/%22">https://coffeeNtv.github.io/&quot;</a> 等语句新建public。接着使用以下语句更新新添加的内容</p>
+<blockquote>
+<p>hugo
+cd public
+git add -A
+git commit -m &ldquo;xxxx&rdquo;
+git push -f origin master</p>
 </blockquote>
 <p>config.toml</p>
 <blockquote>

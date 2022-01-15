@@ -67,9 +67,11 @@
   如果添加了README file，需要把default branch由main改成master，然后在github上把README file删了，否则访问https://coffeentv.github.io/时README file会覆盖原来的内容
   在hugo上新建md文件时，把draft一行去掉，此时不要用notepad++这个神坑软件编辑，否则会把你的md文件变成.md.bak文件。建议使用typora
   使用git push -u origin master如果报错，则先运行git pull &ndash;rebase origin master，再push。参考https://blog.csdn.net/qq_44503987/article/details/107702455
-  命令行 控制台
+  目前感受到的优缺点 优点：
+ 可以快速建站，并且不需要安装过多的软件 免费域名  缺点：
+ 每次更新内容要等挺久的 每次更新似乎都是重新加载整个blog的内容，体量稍大可能会更慢  命令行 控制台
  hugo new site blog cd blog hugo new welcome.md hugo new post/paper1.md cd themes git clone http://github.com/spf13/hyde.git cd .. hugo server &ndash;theme=hyde &ndash;buildDrafts &ndash;watch
-  hugo &ndash;theme=hyde &ndash;baseUrl=&ldquo;https://coffeeNtv.github.io/&quot; cd public git init git remote add origin https://github.com/coffeeNtv/coffeeNtv.github.io.git git add -A git commit -m &ldquo;first commit&rdquo; git pull &ndash;rebase origin master git push -u origin master
+  hugo &ndash;theme=hyde &ndash;baseUrl=&ldquo;https://coffeeNtv.
   
   <div class="read-more-link">
     <a href="/welcome/">Read More…</a>
